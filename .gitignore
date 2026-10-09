@@ -1,0 +1,36 @@
+# Local input data: not shareable
+input/**
+!input/
+!input/README.md
+!input/.gitkeep
+!input/systemic_variables/
+!input/systemic_variables/.gitkeep
+!input/systemic_variables/from_2005/
+!input/systemic_variables/from_2005/.gitkeep
+
+# Generated outputs and fitted objects
+**/table_20_regressor_manifest.csv
+Part_*_Outputs*/**
+!Part_*_Outputs*/
+!Part_*_Outputs*/**/
+!Part_*_Outputs*/**/.gitkeep
+Sample_Descriptive_Appendix_Outputs/**
+!Sample_Descriptive_Appendix_Outputs/
+!Sample_Descriptive_Appendix_Outputs/**/
+!Sample_Descriptive_Appendix_Outputs/**/.gitkeep
+
+# Common derived files
+*.rds
+*.RData
+*.rda
+*.csv
+*.xlsx
+*.xls
+*.png
+*.pdf
+*.tex
+*.log
+*.tmp
+.Rhistory
+.RData
+.Rproj.user/
