@@ -47,7 +47,7 @@ Step 03 creates `table_20_regressor_manifest.csv`, a derived workflow manifest t
 
 ## R packages
 
-The workflow was checked with R 4.4.3 and the CRAN package versions listed below. To install the required packages from CRAN, run:
+The workflow was developed with R 4.4.3. To install the required packages from CRAN, run:
 
 ```r
 required_packages <- c(
@@ -59,7 +59,7 @@ required_packages <- c(
 install.packages(required_packages)
 ```
 
-The workflow was developed with R 4.4.3. The table below reports reference CRAN package versions for reproducibility.
+Reference CRAN package versions for reproducibility:
 
 | Package | Version |
 |---|---:|
