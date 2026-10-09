@@ -47,15 +47,43 @@ Step 03 creates `table_20_regressor_manifest.csv`, a derived workflow manifest t
 
 ## R packages
 
-The scripts check for required packages before running. Install the following packages if they are missing:
+The workflow was checked with R 4.4.3 and the CRAN package versions listed below. To install the required packages from CRAN, run:
 
 ```r
-install.packages(c(
+required_packages <- c(
   "readxl", "xml2", "dplyr", "tidyr", "stringr", "lubridate", "readr",
   "purrr", "tibble", "ggplot2", "scales", "plm", "knitr", "tidyverse",
   "glmnet", "mgcv", "ranger", "xgboost", "pROC", "PRROC", "digest"
-))
+)
+
+install.packages(required_packages)
 ```
+
+The workflow was developed with R 4.4.3. The table below reports reference CRAN package versions for reproducibility.
+
+| Package | Version |
+|---|---:|
+| readxl | 1.5.0.1 |
+| xml2 | 1.6.0 |
+| dplyr | 1.2.1 |
+| tidyr | 1.3.2 |
+| stringr | 1.6.0 |
+| lubridate | 1.9.5 |
+| readr | 2.2.0 |
+| purrr | 1.2.2 |
+| tibble | 3.3.1 |
+| ggplot2 | 4.0.3 |
+| scales | 1.4.0 |
+| plm | 2.6-7 |
+| knitr | 1.52 |
+| tidyverse | 2.0.0 |
+| glmnet | 5.1 |
+| mgcv | 1.9-4 |
+| ranger | 0.18.0 |
+| xgboost | 3.2.1.1 |
+| pROC | 1.19.1 |
+| PRROC | 1.4 |
+| digest | 0.6.39 |
 
 ## Main configuration options
 
@@ -88,4 +116,8 @@ Rscript scripts/Step_05_Run_Locked_Test.R
 - Random seeds are set inside the modelling scripts where stochastic algorithms or resampling are used.
 - Some steps are computationally intensive, especially expanding-window model tuning and bootstrap uncertainty analysis.
 
+## License
 
+This repository is released under the MIT License. See `LICENSE` for details.
+
+The input datasets used by the associated paper are proprietary or third-party datasets and are not licensed or distributed with this repository.
