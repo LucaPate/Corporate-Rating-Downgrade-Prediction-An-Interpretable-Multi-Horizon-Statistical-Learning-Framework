@@ -41,10 +41,6 @@ Run the scripts from the repository root, or call each script directly with `Rsc
 9. `scripts/Step_09_ALE_RGE_Explainability.R` produces ALE and block-level RGE explainability summaries.
 10. `scripts/Step_10_Sample_Descriptive_Appendix.R` creates descriptive appendix tables and figures for the final sample.
 
-## Generated manifest
-
-Step 03 creates `table_20_regressor_manifest.csv`, a derived workflow manifest that maps modelling specifications to their predictor sets. It is used internally by later scripts, especially Step 04 and Step 09, and is not intended to be stored in the repository. The file is ignored together with the other generated outputs; rerun Step 03 locally to recreate it.
-
 ## R packages
 
 The workflow was developed with R 4.4.3. To install the required packages from CRAN, run:
