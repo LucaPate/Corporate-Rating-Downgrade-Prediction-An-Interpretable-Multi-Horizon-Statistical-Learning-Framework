@@ -32,7 +32,7 @@ Run the scripts from the repository root, or call each script directly with `Rsc
 
 1. `scripts/Step_01_Build_Rating_Panel.R` builds the firm-quarter rating panel from S&P rating actions.
 2. `scripts/Step_02_Build_Macro_Systemic_Dataset.R` builds country-quarter macroeconomic and systemic-risk variables.
-3. `scripts/Step_03_Build_Final_Modeling_Panel.R` merges firm, rating, macro, systemic-risk, and downgrade-target data; it also creates temporal folds and the generated modelling manifest used by later steps.
+3. `scripts/Step_03_Build_Final_Modeling_Panel.R` merges firm-level, rating, macroeconomic, and systemic-risk data; constructs the multi-horizon downgrade targets and chronological validation folds; and defines the predictor specifications used for model estimation.
 4. `scripts/Step_04_Tune_Models_Expanding_Window.R` tunes logit, probit, Random Forest, XGBoost, Elastic Net, and GAM models with expanding-window validation.
 5. `scripts/Step_05_Run_Locked_Test.R` refits selected configurations on the pre-test sample and evaluates them on the locked 2019Q1-2025Q4 test period.
 6. `scripts/Step_06_Summarise_Model_Families.R` produces model-family locked-test benchmark summaries.
